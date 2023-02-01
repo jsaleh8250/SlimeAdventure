@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 5203261724902910791}
   - component: {fileID: 8737438172936025023}
   - component: {fileID: -8774163850055254694}
+  - component: {fileID: -2183989924908076123}
   m_Layer: 0
   m_Name: coinPrefab
   m_TagString: Untagged
@@ -138,3 +139,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Speed: 4.5
+--- !u!114 &-2183989924908076123
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6742649464030682012}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f1afaa07ea550e44a8bb23348393bee6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tag: Ogre
