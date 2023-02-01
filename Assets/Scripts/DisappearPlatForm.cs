@@ -5,7 +5,7 @@ using UnityEngine;
 public class DisappearPlatForm : MonoBehaviour
 {
     private Rigidbody2D rb;
-    public float fallDelay;
+    public float fallDelay = 5;
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();

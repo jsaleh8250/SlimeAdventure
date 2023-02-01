@@ -9,6 +9,9 @@ public class LevelFinished : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        SceneManager.LoadScene(nextScene);
+        if (collision.gameObject.tag == "Player")
+        {
+            SceneManager.LoadScene(nextScene);
+        }
     }
 }
