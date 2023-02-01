@@ -1,18 +1,14 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
-using TMPro;
 using UnityEngine;
 
-public class Score : MonoBehaviour
+public class coinscollected : MonoBehaviour
 {
     public static int score;
 
-    public TextMesh ScoreText;
-
+    // Update is called once per frame
     void Update()
     {
         GetComponent<TextMesh>().text = Score.score.ToString();
-
-        
     }
 }

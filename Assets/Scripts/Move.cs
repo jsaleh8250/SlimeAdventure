@@ -19,8 +19,8 @@ public class Move : MonoBehaviour
     private bool isJumping;
     Animator anim;
 
-    public coinshooting coinPrefab;
-    public Transform shootoffset;
+    //public coinshooting coinPrefab;
+    //public Transform shootoffset;
     private void Start()
     {
         rb = GetComponent<Rigidbody2D>(); 
@@ -63,9 +63,9 @@ public class Move : MonoBehaviour
             anim.SetTrigger("runSpeed");
         }
 
-        if (Input.GetKeyDown(KeyCode.K))
-        {
-            Instantiate(coinPrefab,shootoffset.position, transform.rotation);
-        }
+       // if (Input.GetKeyDown(KeyCode.K))
+        //{ 
+         //   Instantiate(coinPrefab,shootoffset.position, transform.rotation);
+        //}
     }
 }
