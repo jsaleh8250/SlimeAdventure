@@ -7,7 +7,7 @@ public class ClickToGoBack : MonoBehaviour
 {
     void Update()
     {
-        if (Input.GetMouseButtonDown(1))
+        if (Input.GetMouseButtonDown(0))
         {
             SceneManager.LoadScene("Title");
 

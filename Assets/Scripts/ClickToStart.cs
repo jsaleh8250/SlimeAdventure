@@ -11,7 +11,7 @@ public class ClickToStart : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetMouseButtonDown(0))
+        if (Input.GetKeyDown(KeyCode.Space))
         {
             Time.timeScale = 1;
             gameObject.SetActive(false);
