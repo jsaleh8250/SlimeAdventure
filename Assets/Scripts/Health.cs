@@ -4,27 +4,28 @@ using UnityEngine;
 
 public class Health : MonoBehaviour
 {
-    public GameObject healthbar;
-    public float numhit = 0;
-    float hp = 1;
-    float intXScale;
+    public HealthBarBehavier healthbar;
+    public float numhit;
+    public float hp = 5;
+    
 
     // Start is called before the first frame update
     void Start()
     {
-        intXScale = healthbar.transform.localScale.x;
+        numhit = hp;
+        healthbar.SetHealth(numhit, hp);
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    public void TakeHit(float damage)
     {
-        numhit++;
+        numhit -= damage;
+        healthbar.SetHealth(numhit, hp);
 
-        float percentage = (hp - numhit) / hp;
-        healthbar.transform.localScale = new Vector2(percentage * intXScale, healthbar.transform.localScale.y);
-
-        if (numhit == hp)
+        if (numhit <= 0)
         {
             Destroy(gameObject);
         }
+
     }
 }
+

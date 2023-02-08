@@ -13,6 +13,11 @@ public class coinshooting : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
+        var enemy = collision.collider.GetComponent<Health>();
+        if (enemy)
+        {
+            enemy.TakeHit(1);
+        }
         Destroy(gameObject);
     }
 }
